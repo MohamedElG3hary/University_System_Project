@@ -107,15 +107,15 @@ body {
 }
 
 .input-wrapper {
-    position: relative; /* مهم جداً لوضع الأيقونة داخل الحقل */
+    position: relative; 
 }
 
 .input-wrapper input {
     width: 100%;
     padding: 12px 15px;
-    border: 1px solid #ccc; /* حدود خفيفة */
+    border: 1px solid #ccc; 
     border-radius: 10px;
-    background-color: #F0F2E4; /* لون بيج أفتح قليلاً للحقل */
+    background-color: #F0F2E4; 
     outline: none;
     font-size: 14px;
     color: #333;
@@ -127,7 +127,6 @@ body {
     background-color: #fff;
 }
 
-/* تنسيق الأيقونات داخل الحقول */
 .icon-left {
     position: absolute;
     left: 15px;
@@ -137,7 +136,6 @@ body {
     font-size: 16px;
 }
 
-/* إزاحة النص في حقل الإيميل لكي لا يغطي الأيقونة */
 .input-wrapper input[type="text"] {
     padding-left: 45px; 
 }
@@ -152,11 +150,10 @@ body {
     font-size: 16px;
 }
 
-/* --- الزر Button --- */
 .login-btn {
     width: 100%;
     padding: 14px;
-    background-color: #3E4936; /* الأخضر الغامق */
+    background-color: #3E4936;
     color: #fff;
     border: none;
     border-radius: 12px;
