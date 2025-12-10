@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Management - University System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Course_Manegement.css">
+</head>
+<body>
+
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <div class="logo-text">
+                    <h3>University</h3>
+                    <span>System</span>
+                </div>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="#"><i class="fa-solid fa-table-columns"></i> Dashboard</a></li>
+                    <li><a href="#"><i class="fa-solid fa-users"></i> Student Management</a></li>
+                    <li class="active"><a href="#"><i class="fa-solid fa-book"></i> Course Management</a></li>
+                    <li><a href="#"><i class="fa-regular fa-building"></i> Department Management</a></li>
+                    <li><a href="#"><i class="fa-solid fa-medal"></i> Grades Management</a></li>
+                    <li><a href="#"><i class="fa-solid fa-chalkboard-user"></i> Instructor Management</a></li>
+                    <li><a href="#"><i class="fa-solid fa-briefcase"></i> Staff Management</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            
+            <header class="page-header">
+                <h2>Course Management</h2>
+                <p>Add, edit, and manage all university courses from this central hub.</p>
+            </header>
+
+            <div class="controls-bar">
+                <div class="search-wrapper">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search by course name, code, professor ...">
+                </div>
+                <a href="add_course.html" class="btn-add-new">
+                    <i class="fa-solid fa-plus"></i> Add New Course
+                </a>
+            </div>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th style="width: 25%;">Course Name</th>
+                            <th>Course Code</th>
+                            <th>Credits</th>
+                            <th>Department</th>
+                            <th>Professor</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Introduction to<br>Computer Science</strong></td>
+                            <td>CS101</td>
+                            <td>3</td>
+                            <td><span class="badge blue">Computer Science</span></td>
+                            <td>Dr. Alan Turing</td>
+                            <td>
+                                <div class="actions">
+                                    <i class="fa-solid fa-pen"></i>
+                                    <i class="fa-solid fa-trash"></i>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Calculus I</strong></td>
+                            <td>MATH203</td>
+                            <td>4</td>
+                            <td><span class="badge green">Mathematics</span></td>
+                            <td>Dr. Ada Lovelace</td>
+                            <td>
+                                <div class="actions">
+                                    <i class="fa-solid fa-pen"></i>
+                                    <i class="fa-solid fa-trash"></i>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Modern World History</strong></td>
+                            <td>HIST110</td>
+                            <td>3</td>
+                            <td><span class="badge yellow">History</span></td>
+                            <td>Dr. Ibn Khaldun</td>
+                            <td>
+                                <div class="actions">
+                                    <i class="fa-solid fa-pen"></i>
+                                    <i class="fa-solid fa-trash"></i>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Principles of<br>Economics</strong></td>
+                            <td>ECON201</td>
+                            <td>3</td>
+                            <td><span class="badge purple">Economics</span></td>
+                            <td>Dr. John M. Keynes</td>
+                            <td>
+                                <div class="actions">
+                                    <i class="fa-solid fa-pen"></i>
+                                    <i class="fa-solid fa-trash"></i>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Organic Chemistry</strong></td>
+                            <td>CHEM301</td>
+                            <td>2</td>
+                            <td><span class="badge red">Chemistry</span></td>
+                            <td>Dr. Marie Curie</td>
+                            <td>
+                                <div class="actions">
+                                    <i class="fa-solid fa-pen"></i>
+                                    <i class="fa-solid fa-trash"></i>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="pagination-footer">
+                <span class="showing-text">Showing 1 to 5 of 97 results</span>
+                <div class="pagination-controls">
+                    <button class="page-btn">&lt;</button>
+                    <button class="page-btn active">1</button>
+                    <button class="page-btn">2</button>
+                    <button class="page-btn">3</button>
+                    <span class="dots">...</span>
+                    <button class="page-btn">9</button>
+                    <button class="page-btn">10</button>
+                    <button class="page-btn">&gt;</button>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+</body>
+</html>

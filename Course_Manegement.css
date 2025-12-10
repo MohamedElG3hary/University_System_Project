@@ -1,0 +1,293 @@
+/* إعدادات عامة */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --bg-main: #E6EBCF;
+    --bg-card: #F2F4E6;
+    --text-dark: #3E4936;
+    --text-light: #555;
+    --border-color: #C8CDBD;
+    --accent-dark: #3E4936;
+    --icon-red: #E74C3C;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    background-color: var(--bg-main);
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+/* --- القائمة الجانبية --- */
+.sidebar {
+    width: 280px;
+    background-color: var(--bg-card);
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid rgba(62, 73, 54, 0.1);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 50px;
+    color: var(--text-dark);
+    padding-left: 10px;
+}
+
+.logo i { font-size: 32px; }
+.logo h3 { font-size: 18px; font-weight: 700; line-height: 1.2; }
+.logo span { font-size: 13px; font-style: italic; opacity: 0.8; }
+
+.sidebar nav ul { list-style: none; }
+.sidebar nav ul li { margin-bottom: 15px; }
+
+.sidebar nav ul li a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: var(--text-dark);
+    padding: 12px 20px;
+    border-radius: 50px;
+    border: 1px solid var(--border-color);
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.3s;
+    background-color: transparent;
+}
+
+/* الزر النشط */
+.sidebar nav ul li.active a {
+    background-color: var(--accent-dark);
+    color: #fff;
+    border-color: var(--accent-dark);
+}
+
+.sidebar nav ul li a:hover:not(.active a) {
+    background-color: #e2e6d5;
+}
+
+/* --- المحتوى الرئيسي --- */
+.main-content {
+    flex: 1;
+    padding: 40px 60px;
+    overflow-y: auto;
+}
+
+/* الهيدر */
+.page-header {
+    margin-bottom: 30px;
+}
+
+.page-header h2 {
+    color: #444;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.page-header p {
+    color: #777;
+    font-size: 14px;
+}
+
+/* --- شريط التحكم --- */
+.controls-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bg-card);
+    padding: 15px 20px;
+    border: 1px solid #aaa;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.search-wrapper {
+    position: relative;
+    width: 350px;
+}
+
+.search-wrapper input {
+    width: 100%;
+    padding: 10px 15px 10px 40px;
+    background-color: #E0E5D0;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    outline: none;
+    font-size: 13px;
+    color: #444;
+}
+
+.search-wrapper i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+    font-size: 14px;
+}
+
+.btn-add-new {
+    background-color: var(--accent-dark);
+    color: #fff;
+    text-decoration: none; /* لأنه رابط */
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: 0.3s;
+}
+
+.btn-add-new:hover {
+    background-color: #2c3526;
+}
+
+/* --- الجدول --- */
+.table-container {
+    background-color: var(--bg-card);
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    padding: 20px;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table thead th {
+    text-align: left;
+    padding: 15px 10px;
+    color: #444;
+    font-weight: 600;
+    font-size: 14px;
+    border-bottom: 2px solid #ccc;
+}
+
+table tbody tr {
+    border-bottom: 1px solid #ccc;
+}
+table tbody tr:last-child {
+    border-bottom: none;
+}
+
+table td {
+    padding: 15px 10px;
+    font-size: 14px;
+    color: #333;
+    vertical-align: middle;
+}
+
+table td strong {
+    font-weight: 600;
+    color: #222;
+}
+
+/* الشارات الملونة (Badges) */
+.badge {
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.badge.blue {
+    background-color: #dbeafe;
+    color: #1e40af;
+}
+
+.badge.green {
+    background-color: #dcfce7;
+    color: #166534;
+}
+
+.badge.yellow {
+    background-color: #fef9c3;
+    color: #854d0e;
+}
+
+.badge.purple {
+    background-color: #f3e8ff;
+    color: #6b21a8;
+}
+
+.badge.red {
+    background-color: #fee2e2;
+    color: #991b1b;
+}
+
+/* أيقونات الإجراءات */
+.actions {
+    display: flex;
+    gap: 15px;
+}
+
+.actions i {
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.actions .fa-pen { color: #555; }
+.actions .fa-pen:hover { color: var(--accent-dark); }
+
+.actions .fa-trash { color: var(--icon-red); }
+.actions .fa-trash:hover { opacity: 0.8; }
+
+
+/* --- الفوتر (Pagination) --- */
+.pagination-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    color: #777;
+    font-size: 14px;
+}
+
+.pagination-controls {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.page-btn {
+    background: none;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #555;
+    border-radius: 4px;
+}
+
+.page-btn:hover {
+    background-color: #ddd;
+}
+
+.page-btn.active {
+    background-color: var(--accent-dark);
+    color: #fff;
+}
+
+.dots {
+    padding: 0 5px;
+}

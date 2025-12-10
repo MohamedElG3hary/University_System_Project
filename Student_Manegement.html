@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management - University System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Student_Manegement.css">
+</head>
+<body>
+
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <div class="logo-text">
+                    <h3>University</h3>
+                    <span>System</span>
+                </div>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="#"><i class="fa-solid fa-table-columns"></i> Dashboard</a></li>
+                    <li class="active"><a href="#"><i class="fa-solid fa-users"></i> Student Management</a></li>
+                    <li><a href="#"><i class="fa-solid fa-book"></i> Course Management</a></li>
+                    <li><a href="#"><i class="fa-regular fa-building"></i> Department Management</a></li>
+                    <li><a href="#"><i class="fa-solid fa-medal"></i> Grades Management</a></li>
+                    <li><a href="#"><i class="fa-solid fa-chalkboard-user"></i> Instructor Management</a></li>
+                    <li><a href="#"><i class="fa-solid fa-briefcase"></i> Staff Management</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            
+            <header class="page-header">
+                <h2>Student Management</h2>
+                <p>Search, filter, and manage student records</p>
+            </header>
+
+            <div class="controls-bar">
+                <div class="search-wrapper">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search by ID ...">
+                </div>
+                <button class="btn-add-new">
+                    <i class="fa-solid fa-plus"></i> Add New Student
+                </button>
+            </div>
+
+            <div class="students-list">
+                
+                <div class="student-card">
+                    <div class="card-top">
+                        <div class="student-info">
+                            <div class="avatar-circle">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+                            <div class="info-text">
+                                <h3>Nour El-din</h3>
+                                <span class="student-id">ID : 20247496887</span>
+                            </div>
+                        </div>
+                        <div class="card-actions">
+                            <i class="fa-solid fa-pen icon-edit"></i>
+                            <i class="fa-solid fa-trash icon-delete"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="card-divider"></div>
+
+                    <div class="card-details">
+                        <div class="detail-item">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <span>Computer Science</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fa-regular fa-envelope"></i>
+                            <span>NourEldin@unversity.edu</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fa-solid fa-circle-notch"></i>
+                            <span>undergraduate</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="student-card">
+                    <div class="card-top">
+                        <div class="student-info">
+                            <div class="avatar-circle">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+                            <div class="info-text">
+                                <h3>Nour Eissa</h3>
+                                <span class="student-id">ID : 20241414435</span>
+                            </div>
+                        </div>
+                        <div class="card-actions">
+                            <i class="fa-solid fa-pen icon-edit"></i>
+                            <i class="fa-solid fa-trash icon-delete"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="card-divider"></div>
+
+                    <div class="card-details">
+                        <div class="detail-item">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <span>Computer Science</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fa-regular fa-envelope"></i>
+                            <span>NourEssa@unversity.edu</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fa-solid fa-circle-notch"></i>
+                            <span>undergraduate</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="pagination-footer">
+                <span class="showing-text">Showing 1 to 5 of 97 results</span>
+                <div class="pagination-controls">
+                    <button class="page-btn">&lt;</button>
+                    <button class="page-btn active">1</button>
+                    <button class="page-btn">2</button>
+                    <button class="page-btn">3</button>
+                    <span class="dots">...</span>
+                    <button class="page-btn">9</button>
+                    <button class="page-btn">10</button>
+                    <button class="page-btn">&gt;</button>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+</body>
+</html>

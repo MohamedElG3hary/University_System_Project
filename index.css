@@ -1,0 +1,172 @@
+/* إعدادات عامة */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden; /* لمنع التمرير */
+}
+
+/* --- الخلفية والحاوية الرئيسية --- */
+.login-wrapper {
+    width: 100%;
+    height: 100%;
+    /* صورة خلفية مشابهة للتخرج */
+    background-image: url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=2070&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* طبقة التغميق الخضراء فوق الصورة */
+.login-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(44, 62, 50, 0.85); /* لون أخضر داكن شفاف */
+    z-index: 1;
+}
+
+/* --- الشعار العلوي --- */
+.top-logo {
+    position: absolute;
+    top: 40px;
+    left: 50px;
+    z-index: 2; /* ليظهر فوق الطبقة الشفافة */
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #F2F4E6; /* لون بيج فاتح */
+}
+
+.top-logo i {
+    font-size: 32px;
+}
+
+.top-logo .logo-text h3 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.top-logo .logo-text span {
+    font-size: 14px;
+    font-style: italic;
+    opacity: 0.8;
+}
+
+/* --- كارت تسجيل الدخول --- */
+.login-card {
+    position: relative;
+    z-index: 2;
+    background-color: #E6EBCF; /* نفس لون بيج الداشبورد */
+    width: 450px;
+    padding: 50px 40px;
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.login-card header {
+    margin-bottom: 35px;
+}
+
+.login-card h2 {
+    color: #333;
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.login-card p {
+    color: #666;
+    font-size: 14px;
+}
+
+/* --- الحقول Inputs --- */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 8px;
+}
+
+.input-wrapper {
+    position: relative; /* مهم جداً لوضع الأيقونة داخل الحقل */
+}
+
+.input-wrapper input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc; /* حدود خفيفة */
+    border-radius: 10px;
+    background-color: #F0F2E4; /* لون بيج أفتح قليلاً للحقل */
+    outline: none;
+    font-size: 14px;
+    color: #333;
+    transition: 0.3s;
+}
+
+.input-wrapper input:focus {
+    border-color: #3E4936;
+    background-color: #fff;
+}
+
+/* تنسيق الأيقونات داخل الحقول */
+.icon-left {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+    font-size: 16px;
+}
+
+/* إزاحة النص في حقل الإيميل لكي لا يغطي الأيقونة */
+.input-wrapper input[type="text"] {
+    padding-left: 45px; 
+}
+
+.icon-right {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* --- الزر Button --- */
+.login-btn {
+    width: 100%;
+    padding: 14px;
+    background-color: #3E4936; /* الأخضر الغامق */
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #2c3526;
+}

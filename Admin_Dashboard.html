@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University System Admin Dashboard</title>
+    <link rel="stylesheet" href="Admin_Dashboard.css">
+    <link rel="script" href="script.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <aside class="sidebar">
+        <div class="logo">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <div>
+                <h3>University</h3>
+                <span>System</span>
+            </div>
+        </div>
+
+        <nav>
+            <ul>
+                <li class="active">
+                    <a href="#"><i class="fa-solid fa-table-columns"></i> Dashboard</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-users"></i> Student Management</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-book"></i> Course Management</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-building"></i> Department Management</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-medal"></i> Grades Management</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-chalkboard-user"></i> Instructor Management</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-briefcase"></i> Staff Management</a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main class="main-content">
+        <header>
+            <h2>Welcome, Admin!</h2>
+            <div class="user-profile">
+                <img src="https://ui-avatars.com/api/?name=Alex+Turner&background=6c5ce7&color=fff" alt="Admin">
+                <div class="user-info">
+                    <h4>Alex Turner</h4>
+                    <small>Administrator</small>
+                </div>
+            </div>
+        </header>
+
+        <section class="dashboard-intro">
+            <h1>Admin Dashboard</h1>
+            <p>Welcome back, Alex! Here's an overview of the university.</p>
+        </section>
+
+        <section class="stats-grid">
+            <div class="card stat-card">
+                <span class="label">Total Students</span>
+                <h3>12,405</h3>
+                <span class="change negative">+5.2% this month</span>
+            </div>
+            <div class="card stat-card">
+                <span class="label">Total Courses</span>
+                <h3>805</h3>
+                <span class="change negative">+1.8% this month</span>
+            </div>
+            <div class="card stat-card">
+                <span class="label">Total Instructors</span>
+                <h3>222</h3>
+                <span class="change negative">+0.5% this month</span>
+            </div>
+            <div class="card stat-card">
+                <span class="label">Total Departments</span>
+                <h3>20</h3>
+                <span class="change negative">+2 this year</span>
+            </div>
+        </section>
+
+        <h3 class="section-title">Management Sections</h3>
+        <section class="management-grid">
+            <div class="card manage-card">
+                <div class="icon-box"><i class="fa-solid fa-users"></i></div>
+                <h4>Students</h4>
+                <p>Manage student profiles, enrollment, and records.</p>
+                <a href="#" class="manage-link">Manage Students &rarr;</a>
+            </div>
+            <div class="card manage-card">
+                <div class="icon-box"><i class="fa-solid fa-book"></i></div>
+                <h4>Courses</h4>
+                <p>Add, Update courses, manage course credits.</p>
+                <a href="#" class="manage-link">Manage courses &rarr;</a>
+            </div>
+            <div class="card manage-card">
+                <div class="icon-box"><i class="fa-regular fa-building"></i></div>
+                <h4>Departments</h4>
+                <p>Oversee academic departments and manage it.</p>
+                <a href="#" class="manage-link">Manage Departments &rarr;</a>
+            </div>
+            <div class="card manage-card">
+                <div class="icon-box"><i class="fa-solid fa-medal"></i></div>
+                <h4>Grades</h4>
+                <p>Input, track, and manage student grades.</p>
+                <a href="#" class="manage-link">Manage Grades &rarr;</a>
+            </div>
+        </section>
+
+    </main>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Student - University System</title>
+    <link rel="stylesheet" href="Add_Student.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <div class="logo-text">
+                    <h3>University</h3>
+                    <span>System</span>
+                </div>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="#"><i class="fa-solid fa-table-columns"></i> Dashboard</a></li>
+                    <li class="active"><a href="#"><i class="fa-solid fa-users"></i> Student Management</a></li>
+                    <li><a href="#"><i class="fa-solid fa-book"></i> Course Management</a></li>
+                    <li><a href="#"><i class="fa-regular fa-building"></i> Department Management</a></li>
+                    <li><a href="#"><i class="fa-solid fa-medal"></i> Grades Management</a></li>
+                    <li><a href="#"><i class="fa-solid fa-chalkboard-user"></i> Instructor Management</a></li>
+                    <li><a href="#"><i class="fa-solid fa-briefcase"></i> Staff Management</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <h1 class="page-title">Add New Student</h1>
+
+            <div class="form-card">
+                <form>
+                    <div class="form-group">
+                        <label>Student Name</label>
+                        <input type="text" placeholder="e.g., Ahmed">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Student ID</label>
+                            <input type="text" placeholder="e.g., 20241....">
+                        </div>
+                        <div class="form-group">
+                            <label>Level</label>
+                            <input type="text" placeholder="e.g., 3">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Major</label>
+                        <div class="select-wrapper">
+                            <select>
+                                <option>Select a Major</option>
+                                <option>Computer Science</option>
+                                <option>Information Systems</option>
+                            </select>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <div class="form-footer">
+                        <div class="upload-area">
+                            <div class="avatar-placeholder">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+                            <div class="upload-info">
+                                <span class="size-hint">Max Size 10 MB</span>
+                                <button type="button" class="btn-upload">
+                                    <i class="fa-solid fa-upload"></i> Upload Your Photo
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="action-buttons">
+                            <button type="button" class="btn-cancel">Cancel</button>
+                            <button type="submit" class="btn-save">Save Student</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>

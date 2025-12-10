@@ -1,0 +1,290 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --bg-main: #E6EBCF;
+    --bg-card: #F2F4E6;
+    --text-dark: #3E4936;
+    --text-light: #555;
+    --border-color: #C8CDBD;
+    --accent-dark: #3E4936;
+    --stat-red: #E74C3C;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    background-color: var(--bg-main);
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+/* --- Sidebar --- */
+.sidebar {
+    width: 280px;
+    background-color: var(--bg-card);
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid rgba(62, 73, 54, 0.1);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 50px;
+    color: var(--text-dark);
+    padding-left: 10px;
+}
+
+.logo i { font-size: 32px; }
+.logo h3 { font-size: 18px; font-weight: 700; line-height: 1.2; }
+.logo span { font-size: 13px; font-style: italic; opacity: 0.8; }
+
+.sidebar nav ul { list-style: none; }
+.sidebar nav ul li { margin-bottom: 15px; }
+
+.sidebar nav ul li a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: var(--text-dark);
+    padding: 12px 20px;
+    border-radius: 50px;
+    border: 1px solid var(--border-color);
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.3s;
+    background-color: transparent;
+}
+
+.sidebar nav ul li.active a {
+    background-color: var(--accent-dark);
+    color: #fff;
+    border-color: var(--accent-dark);
+}
+
+.sidebar nav ul li a:hover:not(.active a) {
+    background-color: #e2e6d5;
+}
+
+/* --- Main Content --- */
+.main-content {
+    flex: 1;
+    padding: 40px 60px;
+    overflow-y: auto;
+}
+
+/* Header */
+.dashboard-header {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px;
+}
+
+.dashboard-header h2 {
+    color: #444;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* --- Dashboard Grid System --- */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: 2fr 1.2fr; /* العمود الأيسر أعرض من الأيمن */
+    gap: 25px;
+}
+
+/* Common Card Style */
+.card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card h3 {
+    color: var(--text-dark);
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* 1. Registered Courses Card */
+.courses-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.course-item {
+    background-color: #F2F4E6;
+    border: 1px solid #aaa; /* حدود أغمق قليلاً للعناصر */
+    border-radius: 8px;
+    padding: 15px;
+}
+
+.course-item h4 {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.course-item span {
+    font-size: 12px;
+    color: #777;
+}
+
+/* 2. Profile Summary Card */
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.avatar-circle {
+    width: 60px;
+    height: 60px;
+    background-color: var(--accent-dark);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 30px;
+    border: 3px solid #fff;
+}
+
+.profile-text h4 {
+    font-size: 16px;
+    color: var(--text-dark);
+}
+
+.profile-text span {
+    font-size: 12px;
+    color: #777;
+}
+
+.stats-row {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.stat-box {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    flex: 1;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.stat-box small {
+    display: block;
+    font-size: 11px;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
+.stat-box strong {
+    font-size: 14px;
+    color: var(--stat-red); /* اللون الأحمر للأرقام */
+}
+
+.btn-full-profile {
+    background-color: var(--accent-dark);
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: auto;
+}
+
+/* 3. Recent Grades Card */
+.grades-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.grades-table th {
+    text-align: left;
+    color: #666;
+    font-size: 13px;
+    font-weight: 500;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #999;
+}
+
+.grades-table td {
+    padding: 12px 0;
+    font-size: 14px;
+    color: #333;
+    border-bottom: 1px solid #ccc;
+}
+.grades-table td:last-child {
+    font-weight: 600;
+    text-align: right;
+}
+.grades-table th:last-child {
+    text-align: right;
+}
+
+/* 4. Course Registration Card */
+.registration-card {
+    justify-content: space-between;
+}
+
+.reg-content {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.reg-icon {
+    font-size: 24px;
+    color: var(--accent-dark);
+}
+
+.reg-text h4 {
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.reg-text p {
+    font-size: 12px;
+    color: #666;
+    line-height: 1.5;
+}
+
+.btn-register {
+    background-color: var(--accent-dark);
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+}

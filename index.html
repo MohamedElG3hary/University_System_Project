@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - University System</title>
+    <link rel="stylesheet" href="Log_In.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="login-wrapper">
+        <div class="top-logo">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <div class="logo-text">
+                <h3>University</h3>
+                <span>System</span>
+            </div>
+        </div>
+
+        <div class="login-card">
+            <header>
+                <h2>Welcome to University System</h2>
+                <p>sign in to access your account</p>
+            </header>
+
+            <form action="#">
+                <div class="input-group">
+                    <label>Email or Username</label>
+                    <div class="input-wrapper">
+                        <i class="fa-solid fa-envelope icon-left"></i>
+                        <input type="text" placeholder="" required>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label>Password</label>
+                    <div class="input-wrapper">
+                        <input type="password" id="passwordInput" placeholder="****" required>
+                        <i class="fa-solid fa-eye-slash icon-right" onclick="togglePassword()"></i>
+                    </div>
+                </div>
+
+                <button type="submit" class="login-btn">Log in</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function togglePassword() {
+            var input = document.getElementById("passwordInput");
+            var icon = document.querySelector(".icon-right");
+            if (input.type === "password") {
+                input.type = "text";
+                icon.classList.remove("fa-eye-slash");
+                icon.classList.add("fa-eye");
+            } else {
+                input.type = "password";
+                icon.classList.remove("fa-eye");
+                icon.classList.add("fa-eye-slash");
+            }
+        }
+    </script>
+</body>
+</html>
