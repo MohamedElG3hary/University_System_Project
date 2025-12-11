@@ -8,14 +8,12 @@
 
 body {
     height: 100vh;
-    overflow: hidden; /* لمنع التمرير */
+    overflow: hidden; 
 }
 
-/* --- الخلفية والحاوية الرئيسية --- */
 .login-wrapper {
     width: 100%;
     height: 100%;
-    /* صورة خلفية مشابهة للتخرج */
     background-image: url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=2070&auto=format&fit=crop');
     background-size: cover;
     background-position: center;
@@ -25,7 +23,6 @@ body {
     align-items: center;
 }
 
-/* طبقة التغميق الخضراء فوق الصورة */
 .login-wrapper::before {
     content: '';
     position: absolute;
@@ -33,20 +30,19 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(44, 62, 50, 0.85); /* لون أخضر داكن شفاف */
+    background-color: rgba(44, 62, 50, 0.85); 
     z-index: 1;
 }
 
-/* --- الشعار العلوي --- */
 .top-logo {
     position: absolute;
     top: 40px;
     left: 50px;
-    z-index: 2; /* ليظهر فوق الطبقة الشفافة */
+    z-index: 2;
     display: flex;
     align-items: center;
     gap: 12px;
-    color: #F2F4E6; /* لون بيج فاتح */
+    color: #F2F4E6; 
 }
 
 .top-logo i {
@@ -65,11 +61,10 @@ body {
     opacity: 0.8;
 }
 
-/* --- كارت تسجيل الدخول --- */
 .login-card {
     position: relative;
     z-index: 2;
-    background-color: #E6EBCF; /* نفس لون بيج الداشبورد */
+    background-color: #E6EBCF; 
     width: 450px;
     padding: 50px 40px;
     border-radius: 30px;
@@ -92,7 +87,7 @@ body {
     font-size: 14px;
 }
 
-/* --- الحقول Inputs --- */
+
 .input-group {
     margin-bottom: 20px;
     text-align: left;
