@@ -25,11 +25,13 @@
                 <li class="active">
                     <a href="#"><i class="fa-solid fa-table-columns"></i> Dashboard</a>
                 </li>
+                        <li>
+            <a href="Student_Management.html" >
+                <i class="fa-solid fa-users"></i> Student Management
+                </a>
+            </li>
                 <li>
-                    <a href="Student_Management.html"><i class="fa-solid fa-users"></i> Student Management</a>
-                </li>
-                <li>
-                    <a href="Course_Managament.html"><i class="fa-solid fa-book"></i> Course Management</a>
+                    <a href="Course_Managament.html"  ><i class="fa-solid fa-book"></i> Course Management</a>
                 </li>
                 <li>
                     <a href="#"><i class="fa-solid fa-building"></i> Department Management</a>
@@ -65,25 +67,25 @@
         </section>
 
         <section class="stats-grid">
-            <div class="card stat-card">
+            <div class="card stat-card"  >
                 <span class="label">Total Students</span>
-                <h3>12,405</h3>
-                <span class="change negative">+5.2% this month</span>
+                <h3 id = "student" >12,405</h3>
+                <span class="change negative" ><span id = "inStd">+5.2</span>  % this month</span>
             </div>
             <div class="card stat-card">
                 <span class="label">Total Courses</span>
-                <h3>805</h3>
-                <span class="change negative">+1.8% this month</span>
+                <h3 id = "courses">805</h3>
+                <span class="change negative"><span id = "inCrs" >+1.8</span>  % this month</span>
             </div>
             <div class="card stat-card">
                 <span class="label">Total Instructors</span>
-                <h3>222</h3>
-                <span class="change negative">+0.5% this month</span>
+                <h3 id = "instructor">222</h3>
+                <span class="change negative" ><span id = "inIns"></span>   % this month</span>
             </div>
             <div class="card stat-card">
                 <span class="label">Total Departments</span>
-                <h3>20</h3>
-                <span class="change negative">+2 this year</span>
+                <h3 id="department">20</h3>
+                <span class="change negative"><span id="inDt">+2</span>  this year</span>
             </div>
         </section>
 
@@ -95,11 +97,11 @@
                 <p>Manage student profiles, enrollment, and records.</p>
                 <a href="Student_Management.html" class="manage-link">Manage Students &rarr;</a>
             </div>
-            <div class="card manage-card">
+            <div class="card manage-card"> 
                 <div class="icon-box"><i class="fa-solid fa-book"></i></div>
                 <h4>Courses</h4>
                 <p>Add, Update courses, manage course credits.</p>
-                <a href="#" class="manage-link">Manage courses &rarr;</a>
+                <a href="Course_Managament.html" class="manage-link">Manage courses &rarr;</a>
             </div>
             <div class="card manage-card">
                 <div class="icon-box"><i class="fa-regular fa-building"></i></div>
@@ -116,5 +118,8 @@
         </section>
 
     </main>
+    <script src="../JS/Admin_Dashboard.js"></script>
+    <div id="loader"></div>
+
 </body>
 </html>
