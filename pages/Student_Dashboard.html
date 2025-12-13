@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Dashboard - University System</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="Student_Dashboard.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/Student_Dashboard.css">
 </head>
+
 <body>
 
     <div class="container">
@@ -23,9 +26,10 @@
             <nav>
                 <ul>
                     <li class="active"><a href="#"><i class="fa-solid fa-table-columns"></i> Dashboard</a></li>
-                    <li><a href="#"><i class="fa-solid fa-book"></i> Courses Registration</a></li>
-                    <li><a href="#"><i class="fa-solid fa-medal"></i> Grades</a></li>
-                    <li><a href="#"><i class="fa-solid fa-circle-user"></i> Profile</a></li>
+                    <li><a href="Course_Registration.html"><i class="fa-solid fa-book"></i> Courses Registration</a>
+                    </li>
+                    <li><a href="History.html"><i class="fa-solid fa-medal"></i> History</a></li>
+                    <li><a href="Profile.html"><i class="fa-solid fa-circle-user"></i> Profile</a></li>
                 </ul>
             </nav>
         </aside>
@@ -36,7 +40,7 @@
             </header>
 
             <div class="dashboard-grid">
-                
+
                 <div class="card courses-card">
                     <h3>Registered Courses - Fall 2025</h3>
                     <div class="courses-list">
@@ -65,7 +69,7 @@
                             <span>Computer Science</span>
                         </div>
                     </div>
-                    
+
                     <div class="stats-row">
                         <div class="stat-box">
                             <small>CGPA</small>
@@ -81,7 +85,7 @@
                         </div>
                     </div>
 
-                    <button class="btn-full-profile">View Full Profile</button>
+                    <a href="Profile.html" class="btn-full-profile">View Full Profile</a>
                 </div>
 
                 <div class="card grades-card">
@@ -126,15 +130,17 @@
                         </div>
                         <div class="reg-text">
                             <h4>Course Registration</h4>
-                            <p>Registration for the Spring 2025 semester is now open. Browse the course catalog and plan your schedule.</p>
+                            <p>Registration for the Spring 2025 semester is now open. Browse the course catalog and plan
+                                your schedule.</p>
                         </div>
                     </div>
-                    <button class="btn-register">Register for Courses</button>
+                    <a href="Course_Registration.html" class="btn-register">Register for Courses</a>
                 </div>
 
             </div>
         </main>
     </div>
-
+    <script src="../JS/Student_Dashboard.js"></script>
 </body>
+
 </html>

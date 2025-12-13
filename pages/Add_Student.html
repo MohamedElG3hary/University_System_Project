@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add Course - University System</title>
-    <link rel="stylesheet" href="Add_Student.css">
+    <title>Add Student - University System</title>
+    <link rel="stylesheet" href="../CSS/Add_Student.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
@@ -23,8 +23,8 @@
             <nav>
                 <ul>
                     <li><a href="#"><i class="fa-solid fa-table-columns"></i> Dashboard</a></li>
-                    <li><a href="#"><i class="fa-solid fa-users"></i> Student Management</a></li>
-                    <li class="active"><a href="#"><i class="fa-solid fa-book"></i> Course Management</a></li>
+                    <li class="active"><a href="#"><i class="fa-solid fa-users"></i> Student Management</a></li>
+                    <li><a href="#"><i class="fa-solid fa-book"></i> Course Management</a></li>
                     <li><a href="#"><i class="fa-regular fa-building"></i> Department Management</a></li>
                     <li><a href="#"><i class="fa-solid fa-medal"></i> Grades Management</a></li>
                     <li><a href="#"><i class="fa-solid fa-chalkboard-user"></i> Instructor Management</a></li>
@@ -34,46 +34,33 @@
         </aside>
 
         <main class="main-content">
-            <h1 class="page-title">Add New Course</h1>
+            <h1 class="page-title">Add New Student</h1>
 
             <div class="form-card">
                 <form>
                     <div class="form-group">
-                        <label>Course Name</label>
-                        <input type="text" placeholder="e.g., Introduction to Computer Science">
+                        <label>Student Name</label>
+                        <input type="text" placeholder="e.g., Ahmed">
                     </div>
 
                     <div class="form-row">
                         <div class="form-group">
-                            <label>Course Code</label>
-                            <input type="text" placeholder="e.g., CS101">
+                            <label>Student ID</label>
+                            <input type="text" placeholder="e.g., 20241....">
                         </div>
                         <div class="form-group">
-                            <label>Credits</label>
+                            <label>Level</label>
                             <input type="text" placeholder="e.g., 3">
                         </div>
                     </div>
 
                     <div class="form-group">
-                        <label>Department</label>
+                        <label>Major</label>
                         <div class="select-wrapper">
                             <select>
-                                <option>Select a Department</option>
+                                <option>Select a Major</option>
                                 <option>Computer Science</option>
                                 <option>Information Systems</option>
-                                <option>Information Technology</option>
-                            </select>
-                            <i class="fa-solid fa-chevron-down"></i>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label>Professor</label>
-                        <div class="select-wrapper">
-                            <select>
-                                <option>Select a Professor</option>
-                                <option>Dr. Ahmed Ali</option>
-                                <option>Dr. Sarah Smith</option>
                             </select>
                             <i class="fa-solid fa-chevron-down"></i>
                         </div>
@@ -81,10 +68,22 @@
 
                     <div class="divider"></div>
 
-                    <div class="form-footer" style="justify-content: flex-end;">
+                    <div class="form-footer">
+                        <div class="upload-area">
+                            <div class="avatar-placeholder">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+                            <div class="upload-info">
+                                <span class="size-hint">Max Size 10 MB</span>
+                                <button type="button" class="btn-upload">
+                                    <i class="fa-solid fa-upload"></i> Upload Your Photo
+                                </button>
+                            </div>
+                        </div>
+
                         <div class="action-buttons">
                             <button type="button" class="btn-cancel">Cancel</button>
-                            <button type="submit" class="btn-save">Save Course</button>
+                            <button type="submit" class="btn-save">Save Student</button>
                         </div>
                     </div>
                 </form>

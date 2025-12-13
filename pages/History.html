@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>History Of Grades</title>
+
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS بتاع الصفحة -->
+    <link rel="stylesheet" href="../CSS/History.css">
+</head>
+
+
+
+<body>
+    <div class="frame">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <div class="logo-text">
+                    <h3>University</h3>
+                    <span>System</span>
+                </div>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="Student_Dashboard.html"><i class="fa-solid fa-table-columns"></i> Dashboard</a></li>
+                    <li><a href="Course_Registration.html"><i class="fa-solid fa-book-open"></i> Courses
+                            Registration</a></li>
+                    <li><a href="History.html"><i class="fa-solid fa-medal"></i> History</a></li>
+                    <li><a href="Profile.html"><i class="fa-solid fa-circle-user"></i> Profile</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main -->
+        <main class="content">
+            <div class="title">
+                <h1>History Of Courses</h1>
+                <p>Here’s a history of your recent activity</p>
+            </div>
+
+            <section class="top-row">
+                <!-- Student Info Card -->
+                <div class="card">
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <b>Student name:</b>
+                            <span>Nour Eissa</span>
+                        </div>
+                        <div class="info-item">
+                            <b>Program</b>
+                            <span>B.S. in Computer Science</span>
+                        </div>
+
+                        <div class="info-item">
+                            <b>Student ID:</b>
+                            <span>20241414435</span>
+                        </div>
+                        <div class="info-item">
+                            <b>Status</b>
+                            <span>Active</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- GPA Card -->
+                <div class="card gpa-card">
+                    <b>Cumulative GPA</b>
+                    <div class="gpa">3.85 / 4.00</div>
+                </div>
+            </section>
+
+            <!-- Grades Table -->
+            <section class="card table-card">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Course ID</th>
+                            <th>Course Name</th>
+                            <th>Credits</th>
+                            <th>Semester</th>
+                            <th>Grades</th>
+                        </tr>
+                    </thead>
+                    <tbody id="historyTableBody">
+                        <tr>
+                            <td>CS305</td>
+                            <td>Data Structures</td>
+                            <td>3</td>
+                            <td>Fall 2024</td>
+                            <td>A-</td>
+                        </tr>
+                        <tr>
+                            <td>CS202</td>
+                            <td>Object Oriented Programming</td>
+                            <td>2</td>
+                            <td>Fall 2024</td>
+                            <td>B</td>
+                        </tr>
+                        <tr>
+                            <td>CS206</td>
+                            <td>Advanced Programming</td>
+                            <td>3</td>
+                            <td>Spring 2025</td>
+                            <td>A-</td>
+                        </tr>
+                        <tr>
+                            <td>CS304</td>
+                            <td>Computer Graphics</td>
+                            <td>3</td>
+                            <td>Spring 2025</td>
+                            <td>A-</td>
+                        </tr>
+                        <tr>
+                            <td>CS205</td>
+                            <td>Web Programming</td>
+                            <td>3</td>
+                            <td>Fall 2024</td>
+                            <td>A</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+
+            <!-- Total Credits -->
+            <section class="card credits-box">
+                <b>Total Credits</b>
+                <div class="num">62</div>
+            </section>
+        </main>
+    </div>
+    <script src="../JS/History.js"></script>
+</body>
+
+
+</html>

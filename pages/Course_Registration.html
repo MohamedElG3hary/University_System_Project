@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Course Registration - University System</title>
-    <link rel="stylesheet" href="Course_Manegment.css">
-    <link rel="stylesheet" href="course_reg.css"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/Course_Registration.css">
+    <link rel="stylesheet" href="course_reg.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
 
     <div class="container">
@@ -16,22 +20,23 @@
                 <i class="fa-solid fa-graduation-cap"></i>
                 <div class="logo-text">
                     <h3>University</h3>
+
                     <span>System</span>
                 </div>
             </div>
 
             <nav>
                 <ul>
-                    <li><a href="#"><i class="fa-solid fa-table-columns"></i> Dashboard</a></li>
+                    <li><a href="Student_Dashboard.html"><i class="fa-solid fa-table-columns"></i> Dashboard</a></li>
                     <li class="active"><a href="#"><i class="fa-solid fa-book-open"></i> Courses Registration</a></li>
-                    <li><a href="#"><i class="fa-solid fa-medal"></i> Grades</a></li>
-                    <li><a href="#"><i class="fa-solid fa-circle-user"></i> Profile</a></li>
+                    <li><a href="History.html"><i class="fa-solid fa-medal"></i> History</a></li>
+                    <li><a href="Profile.html"><i class="fa-solid fa-circle-user"></i> Profile</a></li>
                 </ul>
             </nav>
         </aside>
 
         <main class="main-content">
-            
+
             <header class="reg-header">
                 <div class="header-text">
                     <h1>Course Registration</h1>
@@ -42,13 +47,13 @@
             <div class="search-bar-container">
                 <div class="search-input-wrapper">
                     <i class="fa-solid fa-magnifying-glass"></i>
-                    <input type="text" placeholder="Search by course name, id ...">
+                    <input type="text" id="searchInput" placeholder="Search by course name, id ...">
                 </div>
             </div>
 
             <div class="courses-list">
-                
-                <div class="course-card">
+
+                <div class="course-card" data-course-id="CS101">
                     <div class="course-info">
                         <div class="course-icon">
                             <i class="fa-solid fa-desktop"></i>
@@ -63,7 +68,7 @@
                     </button>
                 </div>
 
-                <div class="course-card">
+                <div class="course-card" data-course-id="MATH203">
                     <div class="course-info">
                         <div class="course-icon">
                             <i class="fa-solid fa-chart-line"></i>
@@ -79,7 +84,7 @@
                     </div>
                 </div>
 
-                <div class="course-card">
+                <div class="course-card" data-course-id="PSYCH101">
                     <div class="course-info">
                         <div class="course-icon">
                             <i class="fa-solid fa-atom"></i>
@@ -94,7 +99,7 @@
                     </button>
                 </div>
 
-                <div class="course-card">
+                <div class="course-card" data-course-id="ADP2011">
                     <div class="course-info">
                         <div class="course-icon">
                             <i class="fa-solid fa-brain"></i>
@@ -109,7 +114,7 @@
                     </button>
                 </div>
 
-                <div class="course-card">
+                <div class="course-card" data-course-id="DB2018">
                     <div class="course-info">
                         <div class="course-icon">
                             <i class="fa-regular fa-building"></i>
@@ -127,48 +132,9 @@
             </div>
         </main>
     </div>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // نحدد الحاوية الكبيرة التي تضم كل الكورسات
-            const coursesList = document.querySelector('.courses-list');
-
-            // نضيف مستمع للنقرات (Event Listener)
-            coursesList.addEventListener('click', function(e) {
-                
-                // 1. إذا ضغط المستخدم على زر "Register"
-                if (e.target.closest('.btn-register')) {
-                    const registerBtn = e.target.closest('.btn-register');
-                    
-                    // كود HTML الخاص بحالة "تم التسجيل"
-                    const registeredStateHTML = `
-                        <div class="action-group">
-                            <span class="badge-registered"><i class="fa-solid fa-check"></i> Registered</span>
-                            <button class="btn-unregister">&minus; Unregister</button>
-                        </div>
-                    `;
-                    
-                    // استبدال زر التسجيل بالكود الجديد
-                    registerBtn.outerHTML = registeredStateHTML;
-                }
-
-                // 2. إذا ضغط المستخدم على زر "Unregister"
-                else if (e.target.closest('.btn-unregister')) {
-                    const unregisterBtn = e.target.closest('.btn-unregister');
-                    // نحصل على الحاوية الأب (action-group) لنحذفها بالكامل
-                    const actionGroup = unregisterBtn.closest('.action-group');
-                    
-                    // كود HTML لزر "Register" الأصلي
-                    const registerBtnHTML = `
-                        <button class="btn-register">
-                            <i class="fa-solid fa-plus"></i> Register
-                        </button>
-                    `;
-                    
-                    // استبدال مجموعة "تم التسجيل" بزر التسجيل مرة أخرى
-                    actionGroup.outerHTML = registerBtnHTML;
-                }
-            });
-        });
-    </script>
+    <script src="../JS/Course_Registration.js"></script>
 </body>
+
+</body>
+
 </html>

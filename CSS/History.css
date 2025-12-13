@@ -1,0 +1,241 @@
+/* ===============================
+   Global Reset & Variables
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --bg-main: #E6EBCF;
+    --bg-card: #F2F4E6;
+    --text-dark: #3E4936;
+    --text-light: #6b6b6b;
+    --border-color: #C8CDBD;
+    --accent-dark: #3E4936;
+}
+
+/* ===============================
+   Page Background
+================================ */
+
+
+
+.frame {
+    background-color: var(--bg-main);
+    min-height: calc(100vh - 40px);
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+}
+
+/* ===============================
+   Sidebar
+================================ */
+
+.sidebar {
+    width: 280px;
+    background-color: var(--bg-card);
+    padding: 30px 20px;
+    border-right: 1px solid rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 40px;
+    color: var(--text-dark);
+}
+
+.logo i {
+    font-size: 32px;
+}
+
+.logo-text h3 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.logo-text span {
+    font-size: 13px;
+    font-style: italic;
+    opacity: 0.8;
+}
+
+.sidebar nav ul {
+    list-style: none;
+}
+
+.sidebar nav ul li {
+    margin-bottom: 14px;
+}
+
+.sidebar nav ul li a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: var(--text-dark);
+    padding: 12px 18px;
+    border-radius: 50px;
+    border: 1px solid var(--border-color);
+    font-size: 14px;
+    font-weight: 500;
+    background-color: transparent;
+    transition: 0.3s;
+}
+
+.sidebar nav ul li.active a {
+    background-color: var(--accent-dark);
+    color: #fff;
+    border-color: var(--accent-dark);
+}
+
+.sidebar nav ul li a:hover:not(.active a) {
+    background-color: #e2e6d5;
+}
+
+/* ===============================
+   Main Content
+================================ */
+
+.content {
+    flex: 1;
+    padding: 40px 55px;
+}
+
+/* ===============================
+   Page Title
+================================ */
+
+.title {
+    margin-bottom: 22px;
+}
+
+.title h1 {
+    font-size: 40px;
+    color: var(--text-dark);
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.title p {
+    font-size: 14px;
+    color: var(--text-light);
+}
+
+/* ===============================
+   Top Info Section
+================================ */
+
+.top-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 22px;
+    margin-bottom: 18px;
+}
+
+.card {
+    background-color: rgba(242, 244, 230, 0.85);
+    border: 1px solid rgba(200, 205, 189, 0.6);
+    border-radius: 14px;
+    padding: 18px 20px;
+}
+
+/* Student Info Card */
+
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px 26px;
+}
+
+.info-item b {
+    display: block;
+    font-size: 20px;
+    color: var(--text-dark);
+    margin-bottom: 4px;
+}
+
+.info-item span {
+    font-size: 13px;
+    color: var(--text-light);
+}
+
+/* GPA Card */
+
+.gpa-card b {
+    display: block;
+    font-size: 20px;
+    color: var(--text-dark);
+    margin-bottom: 10px;
+}
+
+.gpa-card .gpa {
+    font-size: 42px;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+/* ===============================
+   Grades Table
+================================ */
+
+.table-card {
+    padding: 0;
+    overflow: hidden;
+}
+
+.table-card table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-card thead th {
+    text-align: left;
+    padding: 14px 18px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-dark);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.table-card tbody td {
+    padding: 14px 18px;
+    font-size: 14px;
+    color: #2f2f2f;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.table-card tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* ===============================
+   Total Credits Card
+================================ */
+
+.credits-box {
+    width: 160px;
+    margin-top: 16px;
+}
+
+.credits-box b {
+    display: block;
+    font-size: 20px;
+    color: var(--text-dark);
+    margin-bottom: 10px;
+}
+
+.credits-box .num {
+    font-size: 44px;
+    font-weight: 700;
+    color: var(--text-dark);
+}

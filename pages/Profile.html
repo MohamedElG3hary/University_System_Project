@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Profile - University System</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="Profile.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/Profile.css">
 </head>
+
 <body>
 
     <div class="container">
@@ -22,10 +25,11 @@
 
             <nav>
                 <ul>
-                    <li><a href="#"><i class="fa-solid fa-table-columns"></i> Dashboard</a></li>
-                    <li><a href="#"><i class="fa-solid fa-book"></i> Courses Registration</a></li>
-                    <li><a href="#"><i class="fa-solid fa-medal"></i> Grades</a></li>
-                    <li class="active"><a href="#"><i class="fa-solid fa-circle-user"></i> Profile</a></li>
+                    <li><a href="Student_Dashboard.html"><i class="fa-solid fa-table-columns"></i> Dashboard</a></li>
+                    <li><a href="Course_Registration.html"><i class="fa-solid fa-book"></i> Courses Registration</a>
+                    </li>
+                    <li><a href="History.html"><i class="fa-solid fa-medal"></i> History</a></li>
+                    <li><a href="Profile.html"><i class="fa-solid fa-circle-user"></i> Profile</a></li>
                 </ul>
             </nav>
         </aside>
@@ -45,7 +49,7 @@
             </div>
 
             <div class="profile-grid">
-                
+
                 <div class="card info-card">
                     <h3>Personal Information</h3>
                     <div class="info-list">
@@ -91,9 +95,10 @@
                 </div>
 
                 <div class="card grades-card">
-                    <h3>Registered Of Grades</h3>
+                    <h3>Registered Courses</h3>
                     <div class="divider"></div>
-                    <button class="btn-view-all">View All</button>
+                    <p id="registeredCount" style="color:#666; text-align:center; margin-bottom:12px;"></p>
+                    <a href="History.html" class="btn-view-all">View All</a>
                 </div>
 
                 <div class="card academic-card">
@@ -118,5 +123,7 @@
         </main>
     </div>
 
+    <script src="../JS/Profile.js"></script>
 </body>
+
 </html>

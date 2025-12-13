@@ -6,15 +6,11 @@
 }
 
 :root {
-    --bg-sidebar: #F2F4E6;
-    --bg-main: #E6EBCF;
-    /* لون خلفية الصفحة الرئيسية */
-    --card-bg: #F2F4E6;
-    /* لون خلفية الكارت (نفس السايدبار) */
-    --input-bg: #E0E5D0;
-    /* لون خلفية الحقول */
-    --text-dark: #3E4936;
-    /* اللون الزيتي الغامق للنصوص والأزرار */
+    --bg-sidebar: #F2F4E6;      
+    --bg-main: #E6EBCF;        
+    --card-bg: #F2F4E6;        
+    --input-bg: #E0E5D0;        
+    --text-dark: #3E4936;       
     --text-light: #555;
     --border-color: #C8CDBD;
 }
@@ -30,15 +26,13 @@ body {
     width: 100%;
 }
 
-/* --- Sidebar القائمة الجانبية --- */
 .sidebar {
     width: 280px;
     background-color: var(--bg-sidebar);
     padding: 30px 20px;
     display: flex;
     flex-direction: column;
-    /* خط فاصل خفيف يمين القائمة كما في الصورة */
-    border-right: 1px solid rgba(0, 0, 0, 0.05);
+    border-right: 1px solid rgba(0,0,0,0.05); 
 }
 
 .logo {
@@ -50,30 +44,12 @@ body {
     padding-left: 10px;
 }
 
-.logo i {
-    font-size: 28px;
-}
+.logo i { font-size: 28px; }
+.logo h3 { font-size: 16px; font-weight: 700; line-height: 1.2; }
+.logo span { font-size: 13px; font-style: italic; font-weight: 400; opacity: 0.8; }
 
-.logo h3 {
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 1.2;
-}
-
-.logo span {
-    font-size: 13px;
-    font-style: italic;
-    font-weight: 400;
-    opacity: 0.8;
-}
-
-.sidebar nav ul {
-    list-style: none;
-}
-
-.sidebar nav ul li {
-    margin-bottom: 15px;
-}
+.sidebar nav ul { list-style: none; }
+.sidebar nav ul li { margin-bottom: 15px; }
 
 .sidebar nav ul li a {
     display: flex;
@@ -83,15 +59,12 @@ body {
     color: var(--text-dark);
     padding: 12px 20px;
     border-radius: 50px;
-    /* حواف دائرية كاملة Pill Shape */
-    border: 1px solid var(--border-color);
-    /* حدود للأزرار غير النشطة */
+    border: 1px solid var(--border-color); 
     font-size: 14px;
     font-weight: 500;
     transition: 0.3s;
 }
 
-/* حالة الزر النشط (Active) */
 .sidebar nav ul li.active a {
     background-color: var(--text-dark);
     color: #fff;
@@ -102,11 +75,9 @@ body {
     background-color: #e2e6d5;
 }
 
-/* --- Main Content المحتوى الرئيسي --- */
 .main-content {
     flex: 1;
-    padding: 50px 80px;
-    /* هوامش كبيرة كما في الصورة */
+    padding: 50px 80px; 
     overflow-y: auto;
 }
 
@@ -117,7 +88,6 @@ body {
     font-weight: 600;
 }
 
-/* --- Form Card الكارت --- */
 .form-card {
     background-color: var(--card-bg);
     border: 1px solid var(--border-color);
@@ -138,13 +108,11 @@ body {
     margin-bottom: 10px;
 }
 
-/* تنسيق الحقول Inputs */
-.form-group input,
+.form-group input, 
 .form-group select {
     width: 100%;
     padding: 14px 20px;
-    background-color: var(--input-bg);
-    /* اللون الأخضر الفاتح للخلفية */
+    background-color: var(--input-bg); 
     border: 1px solid var(--border-color);
     border-radius: 6px;
     font-size: 14px;
@@ -152,22 +120,17 @@ body {
     outline: none;
 }
 
-/* تنسيق الصفوف (ID & Level) */
 .form-row {
     display: flex;
     gap: 30px;
 }
-
 .form-row .form-group {
-    flex: 1;
-    /* يأخذ مساحة متساوية */
+    flex: 1; 
 }
 
-/* تخصيص القائمة المنسدلة */
 .select-wrapper {
     position: relative;
 }
-
 .select-wrapper i {
     position: absolute;
     right: 20px;
@@ -177,7 +140,6 @@ body {
     font-size: 12px;
     pointer-events: none;
 }
-
 .form-group select {
     appearance: none;
     cursor: pointer;
@@ -190,7 +152,6 @@ body {
     opacity: 0.5;
 }
 
-/* --- Footer (Upload & Buttons) --- */
 .form-footer {
     display: flex;
     justify-content: space-between;
@@ -206,8 +167,7 @@ body {
 .avatar-placeholder {
     width: 70px;
     height: 70px;
-    background-color: #D3D3D3;
-    /* رمادي */
+    background-color: #D3D3D3; 
     border-radius: 50%;
     display: flex;
     align-items: center;
