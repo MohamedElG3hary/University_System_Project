@@ -6,7 +6,7 @@
     <title>Student Management - University System</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../CSS/Student_Manegement.css">
+    <link rel="stylesheet" href="../CSS/Student_Management.css">
 </head>
 <body>
 
@@ -45,7 +45,7 @@
                     <i class="fa-solid fa-magnifying-glass"></i>
                     <input type="text" placeholder="Search by ID ...">
                 </div>
-                <button class="btn-add-new">
+                <button class="btn-add-new" id = "addbtn">
                     <i class="fa-solid fa-plus"></i> Add New Student
                 </button>
             </div>
@@ -64,8 +64,8 @@
                             </div>
                         </div>
                         <div class="card-actions">
-                            <i class="fa-solid fa-pen icon-edit"></i>
-                            <i class="fa-solid fa-trash icon-delete"></i>
+                            <i class="fa-solid fa-pen icon-edit" id="edit"></i>
+                            <i class="fa-solid fa-trash icon-delete" id="delete"></i>
                         </div>
                     </div>
                     
@@ -99,8 +99,8 @@
                             </div>
                         </div>
                         <div class="card-actions">
-                            <i class="fa-solid fa-pen icon-edit"></i>
-                            <i class="fa-solid fa-trash icon-delete"></i>
+                            <i class="fa-solid fa-pen icon-edit" id="edit"></i>
+                            <i class="fa-solid fa-trash icon-delete" id = "delete"></i>
                         </div>
                     </div>
                     
@@ -140,6 +140,7 @@
 
         </main>
     </div>
+        <script src="../JS/Student_Management.js"></script>
 
 </body>
 </html>
