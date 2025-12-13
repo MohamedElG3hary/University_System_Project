@@ -1,5 +1,5 @@
 function add() {
-    alert("Add New Student clicked!");
+        window.location.href = "../pages/Add_Student.html";
 }
 function edit(btn) {
     const studentCard = btn.closest(".student-card");
