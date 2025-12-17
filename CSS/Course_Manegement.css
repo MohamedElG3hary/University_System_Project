@@ -44,12 +44,29 @@ body {
     padding-left: 10px;
 }
 
-.logo i { font-size: 32px; }
-.logo h3 { font-size: 18px; font-weight: 700; line-height: 1.2; }
-.logo span { font-size: 13px; font-style: italic; opacity: 0.8; }
+.logo i {
+    font-size: 32px;
+}
 
-.sidebar nav ul { list-style: none; }
-.sidebar nav ul li { margin-bottom: 15px; }
+.logo h3 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.logo span {
+    font-size: 13px;
+    font-style: italic;
+    opacity: 0.8;
+}
+
+.sidebar nav ul {
+    list-style: none;
+}
+
+.sidebar nav ul li {
+    margin-bottom: 15px;
+}
 
 .sidebar nav ul li a {
     display: flex;
@@ -137,7 +154,7 @@ body {
 .btn-add-new {
     background-color: var(--accent-dark);
     color: #fff;
-    text-decoration: none; 
+    text-decoration: none;
     padding: 10px 20px;
     border-radius: 6px;
     font-weight: 500;
@@ -177,6 +194,7 @@ table thead th {
 table tbody tr {
     border-bottom: 1px solid #ccc;
 }
+
 table tbody tr:last-child {
     border-bottom: none;
 }
@@ -237,11 +255,21 @@ table td strong {
     transition: 0.3s;
 }
 
-.actions .fa-pen { color: #555; }
-.actions .fa-pen:hover { color: var(--accent-dark); }
+.actions .fa-pen {
+    color: #555;
+}
 
-.actions .fa-trash { color: var(--icon-red); }
-.actions .fa-trash:hover { opacity: 0.8; }
+.actions .fa-pen:hover {
+    color: var(--accent-dark);
+}
+
+.actions .fa-trash {
+    color: var(--icon-red);
+}
+
+.actions .fa-trash:hover {
+    opacity: 0.8;
+}
 
 
 .pagination-footer {
@@ -280,4 +308,34 @@ table td strong {
 
 .dots {
     padding: 0 5px;
+}
+
+.logout-section {
+    margin-top: auto;
+    /* ينزل الزرار تحت خالص */
+    padding-top: 20px;
+    border-top: 1px solid var(--border-color);
+}
+
+.logout-btn {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #E74C3C;
+    /* أحمر لوج اوت */
+    transition: 0.3s;
+}
+
+.logout-btn i {
+    font-size: 16px;
+}
+
+.logout-btn:hover {
+    background-color: #c0392b;
 }
